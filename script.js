@@ -8,7 +8,7 @@ function affichagePDF() {
   afficheur.style.height = "900";
 
   setTimeout(function () {
-    afficheur.style += "transform:translateY(900px)";
+    afficheur.style += "transform:translateY(900px);box-sizing: border-box;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);";
     afficheur.style.backgroundColor = "#333";
     afficheur.style.width = "800";
     afficheur.style.height = "900";
@@ -28,12 +28,12 @@ function affichagePDF() {
 
 function affichageProjets() {
   afficheur.innerHTML = "";
-  affichage("1000","200",false);
+  affichage("1000","400",false);
   setTimeout(function () {
-    afficheur.style += "transform:translateY(900px)";
+    afficheur.style += "transform:translateY(900px);box-sizing: border-box;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);";
     afficheur.style.backgroundColor = "#333";
     afficheur.style.width = "1000";
-    afficheur.style.height = "200";
+    afficheur.style.height = "400";
     afficheur.style.margin = "30px";
     setTimeout(function () {
       $("html,body").animate(
@@ -41,9 +41,9 @@ function affichageProjets() {
         "smooth"
       );
       afficheur.innerHTML +=
-      "<h3>Simon</h3><p>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Simon\". </p><a href=\"./Simon/index.html\" type='button'>Voir plus</a>";
+      "<h3 style='color: whitesmoke; margin: 20px;'>Simon</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Simon\". </p><a style='color: whitesmoke; margin: 20px;' href=\"./Simon/index.html\" type='button'>Voir plus</a>";
       afficheur.innerHTML +=
-      "<h3>Miroir</h3><p>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Démineur\" en version amélioré. </p><a href=\"./Miroir/base.html\" type='button'>Voir plus</a>";
+      "<h3 style='color: whitesmoke; margin: 20px;'>Miroir</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Démineur\" en version amélioré. </p><a style='color: whitesmoke; margin: 20px;' href=\"./Miroir/base.html\" type='button'>Voir plus</a>";
     }, 1500);
   }, 1500);
 }
@@ -53,18 +53,23 @@ function affichageProjets() {
  */
 function affichageHobbies() {
   afficheur.innerHTML = "";
-  affichage("1000","200",false);
+  affichage("1000","500",false);
   setTimeout(function () {
-    afficheur.style += "transform:translateY(900px)";
+    afficheur.style += "transform:translateY(900px);box-sizing: border-box;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);color: whitesmoke;";
     afficheur.style.backgroundColor = "#333";
     afficheur.style.width = "1000";
-    afficheur.style.height = "200";
+    afficheur.style.height = "500";
     afficheur.style.margin = "30px";
     setTimeout(function () {
       $("html,body").animate(
         { scrollTop: document.body.scrollHeight },
         "smooth"
       );
+      
+      afficheur.innerHTML += 
+      "<h3 style='margin: 20px;'>Les creepypastas</h3><p style='margin: 20px;'>Je reconnais que c'est un centre d'intérêt assez singulier, mais j'ai toujours apprécié écouté, ou lire une bonne creepypasta.</p><p style='margin: 20px;'>Au cas où vous ne sauriez pas ce que sont des creepypastas, se sont de courtes histoires fictives et horrifiques</p><p style='margin: 20px;'>De manière totalement amateur, j'en ais même écris quelques unes sous ce lien : <a style='margin: 20px;' href='https://drive.google.com/drive/folders/1Sjle4RcOqhEwN2tXQd-_iKhQDkwwo5Qg?usp=sharing'>Lien Google Drive</a></p>";
+      afficheur.innerHTML += 
+      "<h3 style='margin: 20px;'>La musique</h3><p style='margin: 20px;'>Je ne suis ni musicien, ni chanteur. Je partage par contre un amour inconditionnel pour la musique. Cela aide à me concentrer ainsi qu'a me détendre. </p><p style='margin: 20px;'>Si je dois proposer quelques groupes ou chanteurs je dirais ...</p><ul style='margin: 20px;'><li>Queen</li><li>Pentatonix</li><li>MIKA</li></ul><p style='margin: 20px;'>Et voici d'autre groupes ou chanteur un peu moins connu mais que j'adore :</p><ul style='margin: 20px;'><li>Meg & Dia</li><li>Meg Myers</li><li>Nursena Yener</li></ul>";
     }, 1500);
   }, 1500);
 }
@@ -78,7 +83,7 @@ function affichageHobbies() {
 function affichage(width,height,translate){
   if(translate){
     afficheur.style.margin = "30px";
-    afficheur.style += "transform:translateY(900px)";
+    afficheur.style += "transform:translateY(900px);box-sizing: border-box;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);";
   }
   afficheur.style.backgroundColor = "#333";
   afficheur.style.marginTop = "-900";
