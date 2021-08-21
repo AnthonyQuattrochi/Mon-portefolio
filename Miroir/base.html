@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Boite </title>
+        <script src="boite.js" type="application/javascript"></script>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            h1{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body onload="init()">
+        <div id="presentation">
+            <h1> Tp secret - Anthony Quattrochi S4A''</h1>
+            <h3>But du jeu :</h3>
+            <p>Il faut réussir à déminer la grille composée de 5 atomes cachés!</p>
+            <p>Votre score doit tendre vers 0.</p>
+			<h3>Comment jouer?</h3>
+			<p>Vous pouvez cliquez sur les cases en gris clair pour tirer un laser et sur les cases blanches pour essayer de deviner l'emplacement des atomes.</p>
+			<p>Le laser à plusieurs comportement, si :</p>
+			<ul>
+				<li>Il ne rencontre pas d'atomes cachés, il part droit</li>
+				<li>Il rencontre un atome, il est absorbé et ne ressort pas</li>
+				<li>Il jouxte un atome, il est dévié </li>
+			</ul>
+			<p>Attention, les deux derniers comportements peuvent se produire plusieurs fois sur le même laser.</p>
+            <h3>Calcul du score :</h3>
+            <p>Chaque emplacement d'entrée et de sortie du rayon vaut un point.</p>
+            <p>Les réflexions et les absorptions coûtent un point.</p>
+            <p>Les déviations coûtent deux points.</p>
+            <p>Chaque position d’atome mal identifiée coûte 5 points de pénalité.</p>
+        </div>
+        <div id="jeu"></div>
+        <input type="button" id="validate" value="valider votre choix" onclick="myScore();">
+        
+        <div id="debuging">
+            <p id="debug"></p>
+        </div>
+        <input type="button" id="debug" value="mode de debug" onclick="debug();">
+        <input type="button" id="debugClear" value="vider la console de debug" onclick="debugClear();">
+    </body>
+</html>

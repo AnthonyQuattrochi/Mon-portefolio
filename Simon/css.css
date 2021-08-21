@@ -1,0 +1,53 @@
+/**
+
+//////// @author : Anthony Quattrochi ////////
+
+*/
+.circle {
+    position: relative;
+    top:-312px;
+    left: 187px;
+    width: 125px;
+    height: 125px;
+    line-height: 125px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    background: #000
+  }
+
+body{
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+}
+.jeu {
+    width : 500px;
+}
+
+.back{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pad {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+}
+.shape1{
+    background: yellow;
+    border-top-left-radius: 100%;
+  }
+.shape2{
+    background: red;
+    border-top-right-radius: 100%;
+}
+.shape3{
+    background: green;
+    border-bottom-left-radius: 100%;
+}
+.shape4{
+    background: blue;
+    border-bottom-right-radius: 100%;
+}
