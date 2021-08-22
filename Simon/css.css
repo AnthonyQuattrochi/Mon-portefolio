@@ -4,50 +4,74 @@
 
 */
 .circle {
-    position: relative;
-    top:-312px;
-    left: 187px;
-    width: 125px;
-    height: 125px;
-    line-height: 125px;
-    border-radius: 50%;
-    font-size: 25px;
-    color: #fff;
-    text-align: center;
-    background: #000
-  }
+  position: relative;
+  top: -312px;
+  left: 187px;
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
 
-body{
-    display: flex;
-    background-color: aqua;
-    justify-content: center;
+body {
+    background: linear-gradient(to bottom right, #555, #111);
+}
+.simon {
+  display: flex;
+  justify-content: center;
 }
 .jeu {
-    width : 500px;
+  width: 500px;
 }
 
-.back{
-    display: flex;
-    flex-wrap: wrap;
+.back {
+  display: flex;
+  flex-wrap: wrap;
 }
 .pad {
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
 }
-.shape1{
-    background: yellow;
-    border-top-left-radius: 100%;
-  }
-.shape2{
-    background: red;
-    border-top-right-radius: 100%;
+.shape1 {
+  background: yellow;
+  border-top-left-radius: 100%;
 }
-.shape3{
-    background: green;
-    border-bottom-left-radius: 100%;
+.shape2 {
+  background: red;
+  border-top-right-radius: 100%;
 }
-.shape4{
-    background: blue;
-    border-bottom-right-radius: 100%;
+.shape3 {
+  background: green;
+  border-bottom-left-radius: 100%;
+}
+.shape4 {
+  background: blue;
+  border-bottom-right-radius: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  outline: 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+a:hover {
+  background: #333;
+  color: whitesmoke;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+h1{
+  color : red;
+}
+h3,p{
+  color : whitesmoke;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,44 @@
 
     <title>Document</title>
 </head>
-<body>
-    
-    <div class="jeu">
-        <div class="back">
-            <div class="pad shape1" data-pad="1">
-                <audio preload="auto" class="sound1">
-                    <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-            <div class="pad shape2" data-pad="2">
-                <audio preload="auto" class="sound2">
-                    <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-            <div class="pad shape3" data-pad="3">
-                <audio preload="auto" class="sound3">
-                    <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-            <div class="pad shape4" data-pad="4">
-                <audio preload="auto" class="sound4">
-                    <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-            <div class="circle">
-                <div class="level">Level</div>
-            </div>
-        </div>
-        
-    </div>
 
+<body>
+    <a type="button" href="../index.html">Retour portefolio</a>
+    <h1>Jeu Simon</h1>
+    <h3>But du jeu</h3>
+    <p>A chaque niveau, il faut reproduire l'exacte même combinaison de touche.</p>
+    <div class="simon">
+        <div class="jeu">
+            <div class="back">
+                <div class="pad shape1" data-pad="1">
+                    <audio preload="auto" class="sound1">
+                        <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="pad shape2" data-pad="2">
+                    <audio preload="auto" class="sound2">
+                        <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="pad shape3" data-pad="3">
+                    <audio preload="auto" class="sound3">
+                        <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="pad shape4" data-pad="4">
+                    <audio preload="auto" class="sound4">
+                        <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="circle">
+                    <div class="level">Level</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script type="text/javascript" src="jquery-3.6.0.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

@@ -28,12 +28,12 @@ function affichagePDF() {
 
 function affichageProjets() {
   afficheur.innerHTML = "";
-  affichage("1000","400",false);
+  affichage("1000","500",false);
   setTimeout(function () {
     afficheur.style += "transform:translateY(900px);box-sizing: border-box;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);";
     afficheur.style.backgroundColor = "#333";
     afficheur.style.width = "1000";
-    afficheur.style.height = "400";
+    afficheur.style.height = "500";
     afficheur.style.margin = "30px";
     setTimeout(function () {
       $("html,body").animate(
@@ -44,6 +44,9 @@ function affichageProjets() {
       "<h3 style='color: whitesmoke; margin: 20px;'>Simon</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Simon\". </p><a style='color: whitesmoke; margin: 20px;' href=\"./Simon/index.html\" type='button'>Voir plus</a>";
       afficheur.innerHTML +=
       "<h3 style='color: whitesmoke; margin: 20px;'>Miroir</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Démineur\" en version amélioré. </p><a style='color: whitesmoke; margin: 20px;' href=\"./Miroir/base.html\" type='button'>Voir plus</a>";
+      afficheur.innerHTML +=
+      "<div><h3 style='color: whitesmoke; margin: 20px;'>Cascade</h3><img src='./Cascade/vert.png' alt='Alien vert' width='90px' height='110px'/></div><p style='color: whitesmoke; margin: 20px;'>Un projet en Java Android reproduisant le jeu \"Cascade\". </p><a style='color: whitesmoke; margin: 20px;' href=\"./Cascade/Cascade.apk\" type='button'>Voir plus</a>";
+
     }, 1500);
   }, 1500);
 }
