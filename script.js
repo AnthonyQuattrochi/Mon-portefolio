@@ -45,8 +45,9 @@ function affichageProjets() {
       afficheur.innerHTML +=
       "<h3 style='color: whitesmoke; margin: 20px;'>Miroir</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en JavaScript/HTML/CSS reproduisant le jeu \"Démineur\" en version amélioré. </p><a style='color: whitesmoke; margin: 20px;' href=\"./Miroir/base.html\" type='button'>Voir plus</a>";
       afficheur.innerHTML +=
-      "<div><h3 style='color: whitesmoke; margin: 20px;'>Cascade</h3><img src='./Cascade/vert.png' alt='Alien vert' width='90px' height='110px'/></div><p style='color: whitesmoke; margin: 20px;'>Un projet en Java Android reproduisant le jeu \"Cascade\". </p><a style='color: whitesmoke; margin: 20px;' href=\"./Cascade/Cascade.apk\" type='button'>Voir plus</a>";
-
+      "<h3 style='color: whitesmoke; margin: 20px;'>Cascade</h3><p style='color: whitesmoke; margin: 20px;'>Un projet en Java Android reproduisant le jeu \"Cascade\". </p><a style='color: whitesmoke; margin: 20px;' href=\"./Cascade/Cascade.apk\" type='button'>Voir plus</a>";
+      afficheur.innerHTML +=
+      "<h3 style='color: whitesmoke;margin:20px;'>Mes autres projets</h3><p style='color: whitesmoke;margin:20px;'>Tout mes projets accessibles sur le gitlab de mon IUT sont disponibles via ce lien : </p><a style='color: whitesmoke; margin:20px;'href='https://gitlab-ce.iut.u-bordeaux.fr/aquattrochi' alt='Lien gitlab IUT'>Lien gitlab IUT</a>";  
     }, 1500);
   }, 1500);
 }
