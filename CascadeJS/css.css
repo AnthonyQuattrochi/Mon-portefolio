@@ -1,0 +1,40 @@
+/**
+
+//////// @author : Anthony Quattrochi ////////
+
+*/
+html {
+			width : 100%;
+			height : 100%;
+            background: linear-gradient(to bottom right, #555, #111);
+        }
+
+        p,
+        h3,
+        li {
+            color: whitesmoke;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            box-sizing: border-box;
+            outline: 1px dashed #333;
+            padding: 10px;
+            margin: 15px 0 0;
+            display: inline-block;
+        }
+
+        a:hover {
+            background: #333;
+            color: whitesmoke;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+#chargement{
+	display : flex;
+	
+}
